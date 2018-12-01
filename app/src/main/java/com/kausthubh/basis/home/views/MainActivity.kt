@@ -95,6 +95,10 @@ class MainActivity : AppCompatActivity(), CardStackListener {
             restack.show()
             previousCard.visibility = View.VISIBLE
         }
+        placeholder.visibility =
+                if (layoutManager.topPosition == (layoutManager.itemCount)) View.VISIBLE else View.GONE
+        cards.visibility = if (layoutManager.topPosition == (layoutManager.itemCount)) View.GONE else View.VISIBLE
+
     }
 
 }

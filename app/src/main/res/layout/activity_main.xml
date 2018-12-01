@@ -25,6 +25,40 @@
             android:progress="0"
             android:max="100"/>
 
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/placeholder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+                android:src="@drawable/all_caught_up"
+                android:layout_width="210dp"
+                android:layout_height="210dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/imageView"
+                app:layout_constraintVertical_bias="0.25"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:text="All Caught Up!"
+                app:fontFamily="@font/raleway_medium"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/imageView"
+                android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginTop="48dp"
+                android:layout_marginBottom="24dp"/>
+
+    </android.support.constraint.ConstraintLayout>
+
     <com.yuyakaido.android.cardstackview.CardStackView
             android:id="@+id/cards"
             android:layout_width="0dp"
@@ -40,9 +74,12 @@
             android:src="@drawable/ic_previous_button"
             style="?attr/borderlessButtonStyle"
             android:layout_width="48dp"
-            android:layout_height="48dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="8dp"
-            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"/>
+            android:layout_height="48dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"/>
 
 
     <android.support.design.widget.FloatingActionButton
