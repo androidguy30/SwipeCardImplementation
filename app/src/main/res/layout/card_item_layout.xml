@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="#fafafa"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_height="200dp"
+        android:layout_width="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/quotes"
+                android:text="@string/be_yourself_everyone_else_is_already_taken"
+                android:layout_width="0dp"
+                android:textSize="22sp"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.3" app:fontFamily="@font/raleway_medium"/>
+
+        <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/author"
+                android:textColor="#87000000"
+                android:text="@string/jk_rowling"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/quotes"
+                android:layout_marginTop="24dp"
+                app:fontFamily="@font/raleway"
+                app:layout_constraintTop_toBottomOf="@+id/quotes"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
