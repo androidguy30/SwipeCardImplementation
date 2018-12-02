@@ -6,4 +6,5 @@ A Google Primer like implementation. The Yuyakaido's CardStackView library is us
 
 
 Resources
+
 Card Library - https://github.com/yuyakaido/CardStackView
